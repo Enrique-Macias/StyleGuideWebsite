@@ -48,7 +48,7 @@ main {
 }
 
 .intro {
-    line-height: .5;
+    line-height: 0.5;
     font-weight: bold;
     font-size: 28px;
     color: #061B2E;
@@ -57,7 +57,6 @@ main {
 .intro h6 {
     color: #1c85eb;
     font-size: 12px;
-    line-height: 0;
 }
 
 .intro p {
@@ -90,13 +89,13 @@ main {
     display: flex;
     justify-content: space-around;
     gap: 20px;
-    
 }
 
 .color-circle {
-    width: 24px;
-    height: 24px;
+    width: 48px;  /* Increase the size of the circles */
+    height: 48px; /* Increase the size of the circles */
     border-radius: 50%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adding shadow to circles */
 }
 
 .block.sizes {
@@ -108,4 +107,83 @@ main {
     height: 10px;
     background-color: #e94560;
     border-radius: 5px;
+}
+
+.color-section {
+    padding: 50px;
+    background-color: #f6fafd;
+}
+
+.color-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 50px;
+}
+
+.color-titles h3 {
+    color: #061b2e;  /* NAVY 50 */
+    font-size: 24px;  /* Increase title size */
+}
+
+.color-titles p {
+    color: #7f92a4;  /* GRAY 70 */
+    font-size: 16px;  /* Adjust paragraph size */
+}
+
+.color-cards, .color-ramps {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.color-card, .color-ramp {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.color-card p, .color-ramp p {
+    text-align: center;
+    font-size: 14px;
+    color: #333;
+}
+
+.font-section, .text-style-section {
+    padding: 50px;
+    background-color: #f6fafd;
+}
+
+.font-container, .text-style-container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 50px;
+}
+
+.font-titles h3, .text-style-titles h3 {
+    color: #061b2e;  /* NAVY 50 */
+    font-size: 24px;  /* Increase title size */
+}
+
+.font-titles p, .text-style-titles p {
+    color: #7f92a4;  /* GRAY 70 */
+    font-size: 16px;  /* Adjust paragraph size */
+}
+
+.font-examples, .text-style-examples {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.font-example, .text-style-example {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+.font-example h4, .text-style-example h1, .text-style-example h2, .text-style-example h3, .text-style-example p {
+    margin: 0;
+    color: #061b2e;  /* NAVY 50 */
 }
